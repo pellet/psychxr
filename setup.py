@@ -302,12 +302,13 @@ setup_pars = {
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
         'License :: OSI Approved :: MIT License',
         'Topic :: Scientific/Engineering :: Human Machine Interfaces',
         'Intended Audience :: Science/Research'],
     "ext_modules": EXT_MODULES,
     "install_requires": ["Cython>=0.29.3", "numpy>=1.13.3"],
-    "requires": ["numpy>=1.13.3"],
+    "requires": ["numpy (>=1.13.3)"],
     "cmdclass": {"build_ext": build_ext},
     "zip_safe": False
 }

@@ -837,7 +837,7 @@ def getEyeProjectionMatrix(int eye, np.ndarray[np.float32_t, ndim=2] out=None):
     return to_return
 
 
-def getEyeRenderViewport(int eye, np.ndarray[np.int_t, ndim=1] out=None):
+def getEyeRenderViewport(int eye, np.ndarray[np.int32_t, ndim=1] out=None):
     """Get the eye render viewport.
 
     The viewport defines the region on the swap texture a given eye's image is
@@ -858,10 +858,10 @@ def getEyeRenderViewport(int eye, np.ndarray[np.int_t, ndim=1] out=None):
 
     """
     global _eyeLayer
-    cdef np.ndarray[np.int_t, ndim=1] to_return
+    cdef np.ndarray[np.int32_t, ndim=1] to_return
 
     if out is None:
-        to_return = np.zeros((4,), dtype=int)
+        to_return = np.zeros((4,), dtype=np.int32)
     else:
         to_return = out
 
