@@ -43,7 +43,7 @@ import numpy
 
 # Version string for the project. Make sure this is updated to reflect the
 # project branch version.
-PSYCHXR_VERSION_STRING = '0.2.5rc1'
+PSYCHXR_VERSION_STRING = '0.2.6rc1'
 
 # environment variable values
 ENV_TRUE = '1'
@@ -303,6 +303,8 @@ setup_pars = {
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
         'License :: OSI Approved :: MIT License',
         'Topic :: Scientific/Engineering :: Human Machine Interfaces',
         'Intended Audience :: Science/Research'],

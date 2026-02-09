@@ -1,6 +1,37 @@
 This file contains changes introduced to PsychXR for each version. Breaking
 changes may be incompatible with your current code or build environment.
 
+Version 0.2.6rc1 - 2026/02/09
+-----------------------------
+
+Overview:
+
+This release adds Python 3.10-3.12 support and fixes a build compatibility issue
+with newer versions of NumPy (>= 1.24).
+
+New Features:
+
+- Added Python 3.10, 3.11, and 3.12 classifiers.
+- Added pyproject.toml with build dependencies for PEP 518 compliance.
+
+Bug Fixes:
+
+- Replaced deprecated np.int_t with np.int32_t in libovr_view.pxi. NumPy
+  removed np.int_ in version 1.24, which caused Cython compilation to fail
+  with "Invalid type" when building with NumPy >= 1.24. The replacement
+  np.int32_t matches the underlying Oculus SDK C int type used for viewport
+  coordinates.
+- Fixed requires version format in setup.py to use parenthesized syntax
+  expected by newer setuptools.
+
+Breaking Changes:
+
+- None
+
+Known Issues:
+
+- See version 0.2.5 known issues.
+
 Version 0.2.5 - 2022/10/10
 --------------------------
 
