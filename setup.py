@@ -305,6 +305,7 @@ setup_pars = {
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
         'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
         'License :: OSI Approved :: MIT License',
         'Topic :: Scientific/Engineering :: Human Machine Interfaces',
         'Intended Audience :: Science/Research'],

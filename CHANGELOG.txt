@@ -6,12 +6,12 @@ Version 0.2.6rc1 - 2026/02/09
 
 Overview:
 
-This release adds Python 3.10-3.12 support and fixes a build compatibility issue
+This release adds Python 3.10-3.13 support and fixes a build compatibility issue
 with newer versions of NumPy (>= 1.24).
 
 New Features:
 
-- Added Python 3.10, 3.11, and 3.12 classifiers.
+- Added Python 3.10, 3.11, 3.12, and 3.13 classifiers.
 - Added pyproject.toml with build dependencies for PEP 518 compliance.
 
 Bug Fixes:
