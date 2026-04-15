@@ -27,6 +27,12 @@
 
 # HMD types
 HMD_NONE = capi.ovrHmd_None
+# HMD_DK1 and HMD_DKHD were removed from the Oculus PC SDK (>= v32). Legacy
+# integer values are kept so that `from psychxr.drivers.libovr import *` and
+# downstream code (e.g. psychopy.visual.rift) that references these names by
+# attribute keeps working. No currently-shipping Oculus HMD reports these.
+HMD_DK1 = 3
+HMD_DKHD = 4
 HMD_DK2 = capi.ovrHmd_DK2
 HMD_CB = capi.ovrHmd_CB
 HMD_OTHER = capi.ovrHmd_Other
